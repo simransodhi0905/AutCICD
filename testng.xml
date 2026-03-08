@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel='classes' thread-count="5" >
+  <test name="Test">
+  <parameter name="username" value="simran.wahan09@gmail.com"></parameter>
+  <groups>
+  <run>
+  <exclude name ="smoke"/>
+  </run>
+  </groups>
+    <classes>
+      <class name="com.simran.automation.EcommerceProject.SubmitOrderTest"/>
+      <class name="com.simran.automation.EcommerceProject.LandingPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
